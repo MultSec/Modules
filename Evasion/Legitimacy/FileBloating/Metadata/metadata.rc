@@ -1,0 +1,3 @@
+#include <winver.h>
+
+IDR_BINARY_FILE BINARY bloat.bin
