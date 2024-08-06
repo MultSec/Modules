@@ -1,6 +1,6 @@
 # Concept
 
-Making a Reverse Shells in C for Windows
+Making a Reverse Shell
 
 # compilation
 
